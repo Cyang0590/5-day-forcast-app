@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" typr="text/css" href="./assets/style.css">
+    <title>Weather Api Application</title>
+</head>
+
+<body>
+    <nav class="dashboard">
+        <h1>Weather Dashboard</h1>
+    </nav>
+    <div class="container">
+        <section class="card card-rounded bg-white">
+            <h2>Search for a City:</h2>
+            <div class="card-body flex-row justify-center p-4 text-center">
+                <input class="city-input" id="city-name" type="text">
+
+                <button class="search-btn" id="fetch-button">Search</button>
+                <ul class="search-history"></ul>
+            </div>
+        </section>
+        <div class="weather-info">
+            <div class="current-weather">
+                <div class="weather-detail">
+                    <h3 class="cityN">City:</h3>
+                    <div id="icon"><img id="wicon" src="" alt="Weather icon"></div>
+                    <h4 id="temp">Temperture:</h4>
+                    <h4 id="wind">Wind Speed:</h4>
+                    <h4 id="humin">Humidity:</h4>
+                </div>
+            </div>
+        </div>
+            <div class="upcoming-forcast">
+                    <h1>5-Day Forcast:</h1>
+                    <ul class="forcast">
+                        <li class="cards">
+                            <h3 class="cityN">City:</h3>
+                            <div id="icon"><img id="wicon-1" src="" alt="Weather icon"></div>
+                            <h4 id="temp-1">Temperture:</h4>
+                            <h4 id="wind-1">Wind Speed:</h4>
+                            <h4 id="humin-1">Humidity:</h4>
+                        </li>
+                        <li class="cards">
+                            <h3 class="cityN">City:</h3>
+                            <div id="icon"><img id="wicon-2" src="" alt="Weather icon"></div>
+                            <h4 id="temp-2">Temperture:</h4>
+                            <h4 id="wind-2">Wind Speed:</h4>
+                            <h4 id="humin-2">Humidity:</h4>
+                        </li>
+                        <li class="cards">
+                            <h3 class="cityN">City:</h3>
+                            <div id="icon"><img id="wicon-3" src="" alt="Weather icon"></div>
+                            <h4 id="temp-3">Temperture:</h4>
+                            <h4 id="wind-3">Wind Speed:</h4>
+                            <h4 id="humin-3">Humidity:</h4>
+                        </li>
+                        <li class="cards">
+                            <h3 class="cityN">City:</h3>
+                            <div id="icon"><img id="wicon-4" src="" alt="Weather icon"></div>
+                            <h4 id="temp-4">Temperture:</h4>
+                            <h4 id="wind-4">Wind Speed:</h4>
+                            <h4 id="humin-4">Humidity:</h4>
+                        </li>
+                        <li class="cards">
+                            <h3 class="cityN">City:</h3>
+                            <div id="icon"><img id="wicon-5" src="" alt="Weather icon"></div>
+                            <h4 id="temp-5">Temperture:</h4>
+                            <h4 id="wind-5">Wind Speed:</h4>
+                            <h4 id="humin-5">Humidity:</h4>
+                        </li>
+                    </ul>
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./assets/script.js"></script>
+</body>
