@@ -38,12 +38,12 @@ var cityLocation = (event) => {
         $(".cityN-5").text(cityName + " (" + data.list[36].dt_txt + ") ")
         
 
-        $('#wicon').attr('src', "http://openweathermap.org/img/w/" + data.list[0].weather[0].icon + ".png");
-        $('#wicon-1').attr('src', "http://openweathermap.org/img/w/" + data.list[4].weather[0].icon + ".png");
-        $('#wicon-2').attr('src', "http://openweathermap.org/img/w/" + data.list[12].weather[0].icon + ".png");
-        $('#wicon-3').attr('src', "http://openweathermap.org/img/w/" + data.list[20].weather[0].icon + ".png");
-        $('#wicon-4').attr('src', "http://openweathermap.org/img/w/" + data.list[28].weather[0].icon + ".png");
-        $('#wicon-5').attr('src', "http://openweathermap.org/img/w/" + data.list[36].weather[0].icon + ".png");
+        $('#wicon').attr('src', "https://openweathermap.org/img/w/" + data.list[0].weather[0].icon + ".png");
+        $('#wicon-1').attr('src', "https://openweathermap.org/img/w/" + data.list[4].weather[0].icon + ".png");
+        $('#wicon-2').attr('src', "https://openweathermap.org/img/w/" + data.list[12].weather[0].icon + ".png");
+        $('#wicon-3').attr('src', "https://openweathermap.org/img/w/" + data.list[20].weather[0].icon + ".png");
+        $('#wicon-4').attr('src', "https://openweathermap.org/img/w/" + data.list[28].weather[0].icon + ".png");
+        $('#wicon-5').attr('src', "https://openweathermap.org/img/w/" + data.list[36].weather[0].icon + ".png");
 
         $("#temp").text("Temperture: " + data.list[0].main.temp + " °F");
         $("#temp-1").text("Temperture: " + data.list[4].main.temp + " °F");
