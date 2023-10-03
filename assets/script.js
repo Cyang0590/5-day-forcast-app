@@ -2,13 +2,14 @@ var searchInpuT = $('#fetch-button');
 
 var cityInput= $('#city-name');
 
+// check for localstorage
 var savedCity = localStorage.getItem('savedSearch');
     if (localStorage.getItem('savedSearch') === null) {
       localStorage.getItem('savedSearch', '');
       
 };
 
-
+// check for the value enter in the search
 var cityLocation = (event) => {
   event.preventDefault();
     cityName = cityInput.val()
@@ -17,7 +18,7 @@ var cityLocation = (event) => {
     };
     console.log(cityLocation);
    
-
+    // fetch the weather api and return the respose
     var Url = "http://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&appid=21a21be43c54996c1ddabd8fb92b86e3&units=imperial"
 
     fetch(Url)
@@ -26,7 +27,7 @@ var cityLocation = (event) => {
       })
 
       
-
+      // create an function that pulls the value from a specific list of data
       .then(function (data) {
 
         $(".cityN").text(cityName + " (" + data.list[0].dt_txt + ") ")
@@ -71,5 +72,5 @@ var cityLocation = (event) => {
 }
 
 
-
+// create an click event for the search button
 searchInpuT.on('click', cityLocation) 
