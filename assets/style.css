@@ -1,0 +1,140 @@
+nav {
+    background-color: rgb(37, 80, 124) ;
+    
+    text-align: center;
+    color: aliceblue;
+    margin-top: -10px;
+    font-size: 30px;
+    padding: 5px;
+    width: 100%;
+    margin-left: -10px;
+}
+
+h2 {
+    font-size: 35px;
+    position: relative;
+    margin-top: -2px;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 55px;
+    padding: 20px;
+    
+}
+
+.city-input {
+    position: relative;
+    width: 110%;
+    margin-bottom: 10px;
+    margin-top: -50px;
+    height: 30px;
+   border: 2px solid grey; 
+}
+
+.search-btn {
+    position: relative;
+    width: 113%;
+    height: 30px;
+    font-size: 17px;
+    background-color: rgb(89, 146, 182);
+    color: aliceblue;
+    border-radius: 5px;
+   
+    
+}
+
+.search-btn:hover {
+    opacity: 0.5;
+}
+
+.search-btn:active {
+    font-size: 105%;
+    box-shadow: 0 0 8px #000 inset;
+}
+
+.search-history {
+     border-top: 2px solid black;
+    width: 100%;
+}
+
+.current-weather {
+    position: relative;
+    left: 260px;
+    bottom: 10px;
+    border-style: solid;
+
+    width: 300%;
+    padding: 1px 70px 20px 20px;
+    border-radius: 5px;
+    border-radius: 9px;
+    text-align: center;
+    
+}
+
+.upcoming-forcast{
+    position: relative;
+    left: 20px;
+    margin-top: 250px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+    margin-left: -250px;
+    
+}
+
+#forcast-header {
+    padding-top: 40px;
+}
+
+.forcst {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+
+
+.cards {
+    display: inline-block;
+    flex-wrap: wrap;
+    padding: 6px;
+    width: 230px;
+    flex-direction: row;
+    border-style: solid;
+    margin-top: 3%;
+    margin-right: 25px;
+    border-radius: 9px;
+    
+
+}
+
+@media screen and (max-width: 992px) {
+    header, .current-weather {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+   
+}
+
+@media screen and (max-width: 768px) {
+
+    .current-weather {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    
+    }
+
