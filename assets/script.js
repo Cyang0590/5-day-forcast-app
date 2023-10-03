@@ -19,7 +19,7 @@ var cityLocation = (event) => {
     console.log(cityLocation);
    
     // fetch the weather api and return the respose
-    var Url = "http://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&appid=21a21be43c54996c1ddabd8fb92b86e3&units=imperial"
+    var Url = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&appid=21a21be43c54996c1ddabd8fb92b86e3&units=imperial"
 
     fetch(Url)
       .then(function (response) {
