@@ -19,7 +19,7 @@ User can search any of the US cities to view the current and upcoming forcast fo
 ## Credits
 
 Jacob Carver
-
+Phillip Loy
 
 ## Deployed Page
 
